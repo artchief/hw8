@@ -29,6 +29,7 @@ for (int i = 0; i < array.GetLength(0); i++)
 Console.WriteLine("______________");
 
 int sum=0;
+// минимальная сумма
 int minsum = Int32.MaxValue;
 int minrow =0;
 
@@ -36,6 +37,7 @@ for (int i = 0; i < array.GetLength(0); i++)
 {
     for (int j = 0; j < array.GetLength(1); j++)
     {
+        // каждая сумма
         sum+=array[i,j];
     }
     if (sum<minsum)
